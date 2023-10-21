@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //mundo js!
+        let numero = prompt("Digite um numero inteiro: ")
+        if(numero == '1'){
+            altera("janeiro")
+        }
+        else if (numero == '2') {
+            alert("fevereiro")
+        }
+        else if (numero == '3'){
+            alert("março")
+        }
+        else{
+            alert("valor invalido")
+        
+        }
+
+        //--------------------------------------------------
+        switch(numero){
+            case '1':
+                alert("janeiro");
+                break;
+            case '2':
+                alert("fevereiro")
+                break; 
+            case '2': 
+                alert('março')
+                break;    
+            default:numero
+                alert("valor invalido");     
+            }
+            
+            //Uso Terná0,rio:
+            let texto = (numero%2 == 0) ? "par" : "impar"
+            alerta(texto);
+            if (numero%2==0){
+                alert("par");
+            }
+            else{
+                alert("impar");
+            }
+            //uso do for():
+            let frutas =["banana","maçã","pessego","uva","jaca"]
+            alert(frutas[2] );
+            alert(frutas.length );
+            let tamanho = frutas.length;
+            for(let cont=0;cont<frutas.length; cont+=1){
+                alert(frutas[cont]);
+            }
+            alert(frutas[frutas.length-1]){
+
+            }
+            //wile()
+            let preco= 1000
+            let soma = 0
+            //Enquanto
+            while(preco>0) {
+                preco =parserfloat(prompt("digite o preço da mercadoria"));
+                soma += preco;
+            }
+            alert("total a pagarR$" + soma);
+
+    
+    </script>
+    
+
+    
+</body>
+</html>

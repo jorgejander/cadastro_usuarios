@@ -1,0 +1,1 @@
+alert("Js no arquivo externo");

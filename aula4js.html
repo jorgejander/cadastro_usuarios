@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+     let x = 0;
+     const y = 0;
+     x = 1; //ok
+     //y = 1; 
+     //Error!
+     
+     let lista1 = [1,2,3,4,5];
+     const lista2 = [1,2,3,4,5];
+     alert(lista2.pop() );    // método pop(), retira o último item da lista
+     alert(lista2); //1,2,3,4
+     lista2.push(6, 7);  //1,2,3,4,6,7
+     alert(lista2);
+     alert(lista2[3] ) ;  //
+     lista2.shift(); // shift, retira o primeiro elemento da lista.
+     alert("lista usando shift" + lista2); // 2,3,4,5,6,7     
+     lista2.unshift(-1, 0) //unshift , insere elemento no ÌNICIO da lista.
+     alert("lista com unshift: " + lista2); //-1,0,2,3,4,6,7 
+     
+     let numeroSete  = lista2[6];
+     alert("imprimindo numeroSete: " + numeroSete);
+
+     for(let indice=0; indice<lista2.length; indice++) {
+        alert(lista2[indice]);
+     }
+
+     let nomes =["carlos","Ana","carla","marcos"];
+     let femininos = [];
+     femininos.push(nomes[1]);
+     femininos.push(nomes[2]);
+     alert("lista femininos: " + femininos);
+     let femininos2 = [];
+     femininos2 = nomes.slice(1,3);
+     alert("feminios2 = " + femininos2);
+     nomes.splice(2,1,"Maria","joana");
+     alert(nomes);
+
+     const carros=["bmw","volvo","mimi"];
+     let text = "";
+     for(let carro of carros){
+        text += (carro +" - ");
+     }
+      alert (text)
+
+     /*let idade = 0;
+     do{
+        idade = prompt("infrome a idade do cliente: ");
+     } while(idade>150 || idade<12);
+     
+     
+     let x=0;
+     do{
+         alert(x);
+         x++;
+     }while(x<10) ;
+     
+      let x=0;
+       while(x<10){
+        alerte(x);
+        x++;
+       }
+       
+       for(let c=1;c<=10;c++){
+            alert(c);
+        }
+        */
+
+
+    </script>
+</body>
+</html>

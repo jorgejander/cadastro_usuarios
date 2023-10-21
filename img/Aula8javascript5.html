@@ -1,0 +1,14 @@
+<body>
+    <h3>Este código tem um erro!</h3>
+    <div>
+        Digite algo: <input type="text" id="entrada">
+        <input type="button" value="Executar" onclick="minhaFunc()">
+    </div>
+    <p id="resposta"><</p>
+    <script>
+        function minhaFunc() {
+            let valor = document.getElementById("entrada").value;
+            document.getElementById("resposta").textContent = valor;
+        }
+    </script>
+</body>

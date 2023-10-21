@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Aula 4 - Display</title>
+    <style>
+        p1{
+            display: inline;
+            background-color: blue;
+        }
+        span{
+            display: block;
+            background-color: brown;
+        }
+        a{
+            display: block;
+            background-color: aqua;
+        }
+        h1{
+            display: none;
+        }
+        #estatico{
+            position: static;
+            border: 3px solid green;
+        }
+
+        #relativa{
+            position: relative;
+            left: 30px;
+            height: 360px;
+            border: 3px solid yellow;
+        }
+        #fixa{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid blue;
+        }
+        #absoluta{
+            position: absolute;
+            right: 0px;
+            width: 160px;
+            height: 160px;
+            border: 2px solid palevioletred;
+        }
+        #outra{
+            position: sticky;
+            top: 0px;
+            background-color: burlywood;
+            color: red;
+            border: 3px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <p>Este paragrafo agora é INLINE</p>
+    <h1>Este tesxto não ira aparecer!</h1>
+    <span>Este SPAN esta usando toda a linha</span>
+    <a href="https://www.google.com.br">Google S/A.</a>
+    <div id="estatico">
+        <p>Primeiro Parágrafo</p>
+        <p>Segundo Parágrafo</p>
+    </div>
+    <div id="relativa">
+        <p>Primeiro Parágrafo</p>
+        <p>Segundo Parágrafo</p>
+        <div id="absoluta">
+            <p>Primeiro Parágrafo Absoluta</p>
+            <p>Segundo Parágrafo Absoluta</p>
+        </div>
+    </div>
+    <div id="fixa">
+        <p>Primeiro Parágrafo</p>
+        <p>Segundo Parágrafo</p>
+    </div> <!--UX User eXperience-->
+    <h2 id="outra">
+        Infinity School
+    </h2>
+    <div style="padding-bottom: 2000px;">
+        <p>Não posso imaginar que uma vida sem trabalho seja</p>
+        <p>capaz de trazer qualquer espécie de conforto.</p>
+        <p>A imaginação criadora e o trabalho para mim andam</p>
+        <p>de mãos dadas; não retiro prazer de nenhuma outra coisa.</p>
+    </div>
+</body>

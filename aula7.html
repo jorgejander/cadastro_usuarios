@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 onmousemove="corAzul()" onmouseleave="corVerde()" id="saida" style="display: inline;
+                                               border:2px solid blue;" 
+    >titulo H1
+    </h1>
+  <div style="
+  ">
+  </div>
+   
+
+    /*div>button#geronimo*/
+   <!-- <H2 style=""></H2>
+    <button onclick="calcular()">
+    executar</button>
+    <script>
+       function corAzul() {
+          document.getElementById("saida").style.backgroundColor = "blue";
+          document.getElementById("saida").style.fontSize="32px";
+          document.getElementById("saida").style.borderRadius="30px";        
+          document.getElementById("saida").style.borderColor="red"
+       }
+       function corVerde (){
+          document.getElementById("saida").style.backgroundColor = "green";
+          document.getElementById("saida").style.fontSize="20px";
+          document.getElementById("saida").style.borderRadius="20px";        
+          document.getElementById("saida").style.borderColor="blue"
+       }
+
+       //const calcular = () => alert ('resutado: 999')
+       function calcular(){
+        // Gera um nùmero randômico entre 0 e 1 (incluíndo 0 e excluíndo 1 )   
+        let dado1 = ( Math.random () * ( 5 + 1) + 1) 
+        let dado2 = ( Math.random () * ( 5 + 1) + 1) 
+        let dado3 = ( Math.random () * ( 5 + 1) + 1) 
+        alert(`dado 1 : ${dado1} dado 2 : ${dado2} dado 3 : ${dado3}` );
+        } 
+    </script> -->
+    
+</body>
+</html>

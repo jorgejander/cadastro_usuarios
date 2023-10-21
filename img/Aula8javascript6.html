@@ -1,0 +1,18 @@
+<body>
+    <script>
+    // Declarando variáveis e atribuindo valor em um só comando
+    let varLocalGeral = 10;
+    // Um bloco de código sem função específica:
+    {
+        let varLocalBloco; // Declarando avariável
+        varLocalBloco = window.prompt("Informe um valor: "); // Atribuindo valor pelo usuário
+        alert(varLocalBloco);
+        alert(varLocalGeral);
+        var varGlobalBloco = 14;
+        globalSemVar = 15; // Declarações sem 'var' são implicitamente 'var'!
+    }
+    alert(varGlobalBloco);
+    alert(globalSemVar);
+    alert(varLocalBloco); // Erro!!
+    </script>
+</body>

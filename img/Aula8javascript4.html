@@ -1,0 +1,16 @@
+<body>
+    <form id= "frm1">
+        Digite algo: <input type="text" id="entrada">
+        <input type="button" value="Executar" onclick="minhaFunc()"/>
+        <p id="resposta"></p>
+    </form>
+    <script>
+        function minhaFunc()
+        {
+            // Obtem o objeto frm
+            let frm = document.forms['frm1'];
+            let entrada = frm.elements.entrada.value;
+            document.getElementById('#resposta').innerHTML = entrada;
+        }
+    </script>
+</body>
